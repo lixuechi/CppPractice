@@ -1,0 +1,22 @@
+#include <iostream >
+using namespace std;
+
+int main() {
+	int array[] = {1, 2, 3, 4, 5};
+	int *ptr = array;
+	cout << *ptr << endl; // 1
+	cout << *(++ptr) << endl; // 2
+	cout << *(++ptr) << endl; // 3
+	cout << *(++ptr) << endl; // 4
+	cout << *(++ptr) << endl; // 5
+
+	int array2[5] = {1, 2, 3, 4, 5};
+	int *ptr2 = array2;
+	cout << *ptr2 << endl; // 1
+	cout << *(++ptr2) << endl; // 2
+	cout << *(++ptr2) << endl; // 3
+	cout << *(++ptr2) << endl; // 4
+	cout << *(++ptr2) << endl; // 5
+
+	return 0;
+}
